@@ -1,9 +1,24 @@
 # Voting DApp - Smart Contract
 
-**Version**: 0.2.1 | **Status**: Testnet Ready - Security Audited  
+**Version**: 0.2.2 | **Status**: Testnet Ready - Security Audited  
 📋 [Changelog](CHANGELOG.md) | 📦 [Release Guide](RELEASE.md) | 🔒 [Security Audit](SECURITY_AUDIT.md) | 🏷️ [Semantic Versioning](https://semver.org/)
 
 This is the smart contract repository for the Bounded Stake Voting (BSV) system, maintained separately from the frontend.
+
+## ⚡ Quick Frontend Connection
+
+**Just 2 commands to connect your React/Vite frontend:**
+
+```bash
+# Terminal 1
+npm run node
+
+# Terminal 2
+npm run deploy:connect
+```
+
+**That's it!** Auto-deploys contracts, copies ABIs, and updates frontend `.env.local`  
+📖 See [QUICK_CONNECT.md](QUICK_CONNECT.md) for details
 
 ## ⚡ Gas Optimized Version Available!
 

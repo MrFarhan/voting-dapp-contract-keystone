@@ -1,7 +1,7 @@
-VERSION=0.2.1
+VERSION=0.2.2
 RELEASE_DATE=2026-01-30
-RELEASE_NAME="BSV Complete - Gas Optimized + Testnet Ready"
-STATUS="Production Ready - Testnet Deployable"
+RELEASE_NAME="BSV Complete - Frontend Auto-Connect"
+STATUS="Testnet Ready - Full Stack Integration"
 SEMVER_COMPLIANCE="Semantic Versioning 2.0.0"
 CHANGELOG="CHANGELOG.md"
 RELEASE_GUIDE="RELEASE.md"

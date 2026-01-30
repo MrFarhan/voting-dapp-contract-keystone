@@ -5,6 +5,41 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.2] - 2026-01-30
+
+### Added
+- **Automated Frontend Integration** (`deploy-and-connect.ts`)
+  - One-command deployment and frontend connection
+  - Automatically copies ABIs to frontend project
+  - Auto-generates `.env.local` with contract addresses
+  - Creates TypeScript `addresses.ts` config file
+  - `npm run deploy:connect` command for seamless integration
+  
+- **Frontend Integration Documentation**
+  - `QUICK_CONNECT.md` - Quick 2-command setup guide
+  - `FRONTEND_INTEGRATION.md` - Comprehensive integration guide
+  - Simplified workflow for monorepo setup
+  - Example usage and troubleshooting
+
+### Changed
+- Updated `package.json` with `deploy:connect` script
+- Enhanced README with quick frontend connection section
+- Streamlined developer workflow (2 commands instead of manual setup)
+
+### Developer Experience
+- ✅ Eliminates manual ABI copying
+- ✅ Eliminates manual .env updates
+- ✅ Works with projects in same parent folder (`uni/`)
+- ✅ Automatic on every deployment
+- ✅ Supports both `voting-dapp-keystone` frontend
+
+### Status
+- All 36 tests passing (100%)
+- Zero breaking changes
+- Full backward compatibility maintained
+
+---
+
 ## [0.2.1] - 2026-01-30
 
 ### Added
