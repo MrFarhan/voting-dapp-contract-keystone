@@ -1,0 +1,107 @@
+# Voting DApp - Smart Contract
+
+This is the smart contract repository for the Bounded Stake Voting (BSV) system, maintained separately from the frontend.
+
+## Prerequisites
+
+- Node.js (v16 or higher)
+- npm or yarn
+
+## Installation
+
+```bash
+npm install
+```
+
+## Usage
+
+### Quick Start (Two Terminals Required)
+
+**Terminal 1 - Start Local Blockchain:**
+```bash
+npm run node
+```
+Keep this terminal running. It provides 20 test accounts with 10000 ETH each.
+
+**Terminal 2 - Deploy Contract:**
+```bash
+npm run deploy:local
+```
+
+**Copy Contract Address:**
+After deployment, find the contract address in `deployments/latest-localhost.json`:
+```bash
+cat deployments/latest-localhost.json
+```
+
+**Update Your Frontend `.env`:**
+```env
+VITE_CONTRACT_ADDRESS=<address-from-json>
+VITE_RPC_URL=http://127.0.0.1:8545
+VITE_CHAIN_ID=1337
+```
+
+**See [QUICKSTART.md](QUICKSTART.md) for detailed step-by-step instructions.**
+
+## Available Scripts
+
+- `npm run compile` - Compile smart contracts
+- `npm run test` - Run tests
+- `npm run node` - Start local Hardhat node
+- `npm run deploy:local` - Deploy to local node
+
+## Contract Address
+
+After deployment, find the contract address in `deployments/latest-localhost.json`
+
+## Network Configuration
+
+- **Network**: Hardhat Local
+- **RPC URL**: http://127.0.0.1:8545
+- **Chain ID**: 1337
+
+## Project Structure
+
+```
+contracts/          # Solidity smart contracts
+scripts/            # Deployment scripts
+test/              # Contract tests
+deployments/       # Deployment artifacts
+artifacts/         # Compiled contracts
+typechain-types/   # TypeScript types for contracts
+```
+
+## Integration with Frontend
+
+1. Start the local node: `npm run node`
+2. Deploy the contract: `npm run deploy:local`
+3. Copy the contract address from `deployments/latest-localhost.json`
+4. Update your frontend `.env` with the contract address
+5. Make sure your frontend is configured to connect to `http://127.0.0.1:8545`
+
+## Important Notes
+
+- Keep the Hardhat node running while testing with the frontend
+- Each time you restart the node, you'll need to redeploy the contract
+- The contract address will remain the same if you don't clear the cache
+- Test accounts and private keys are shown in the console when the node starts
+
+## Troubleshooting
+
+**Port already in use:**
+```bash
+# Kill the process using port 8545
+lsof -ti:8545 | xargs kill -9
+```
+
+**Contract not found:**
+Make sure you've deployed to the correct network and the node is running.
+
+**Reset local blockchain:**
+```bash
+# Clear cache and redeploy
+rm -rf cache artifacts deployments
+npm run compile
+npm run node  # In one terminal
+npm run deploy:local  # In another terminal
+```

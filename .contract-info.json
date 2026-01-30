@@ -1,0 +1,7 @@
+{
+  "contractAddress": "DEPLOY_FIRST",
+  "networkName": "localhost",
+  "chainId": "1337",
+  "rpcUrl": "http://127.0.0.1:8545",
+  "instructions": "Run 'npm run node' in one terminal, then 'npm run deploy:local' in another. The contract address will be saved here after deployment."
+}
