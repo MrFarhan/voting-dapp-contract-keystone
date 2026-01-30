@@ -45,10 +45,57 @@ VITE_CHAIN_ID=1337
 
 ## Available Scripts
 
+### Development
 - `npm run compile` - Compile smart contracts
-- `npm run test` - Run tests
 - `npm run node` - Start local Hardhat node
-- `npm run deploy:local` - Deploy to local node
+- `npm run deploy:local` - Deploy to localhost
+
+### Testing
+- `npm test` - Run all 28 test cases
+- `npm run test:verbose` - Run tests with detailed output
+- `npm run test:coverage` - Generate test coverage report
+- `npm run generate:report` - Generate comprehensive instructor report
+- `./run-tests.sh` - Run all tests + generate coverage (all-in-one)
+
+### Coverage Reports
+After running coverage, view reports at:
+- `coverage/COVERAGE_REPORT.txt` - Text summary for submission
+- `coverage/index.html` - Interactive HTML visualization
+
+## 🧪 Testing & Coverage
+
+### Quick Test
+```bash
+npm test
+```
+Runs all 28 test cases in ~5 seconds.
+
+### Generate Coverage Report (For Instructor)
+```bash
+npm run generate:report
+```
+Creates comprehensive coverage report including:
+- Statement, branch, and function coverage
+- All 28 test cases documented
+- Security features verification
+- Formula validation
+
+**Reports Generated:**
+- `coverage/COVERAGE_REPORT.txt` - Formatted text report
+- `coverage/index.html` - Interactive visualization
+
+### View Coverage in Browser
+```bash
+open coverage/index.html
+```
+
+### All-in-One Test Suite
+```bash
+./run-tests.sh
+```
+Runs tests + generates coverage + creates reports.
+
+**📚 Full testing documentation**: See [TESTING_GUIDE.md](TESTING_GUIDE.md)
 
 ## Contract Address
 
