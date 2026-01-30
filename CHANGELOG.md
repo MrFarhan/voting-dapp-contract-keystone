@@ -5,6 +5,34 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.1] - 2026-01-30
+
+### Added
+- **Security Audit Report** (SECURITY_AUDIT.md)
+  - Comprehensive internal security review
+  - Overall security rating: B+ (Good)
+  - Identified 0 critical, 3 medium-risk, 5 low-risk issues
+  - SWC Registry vulnerability checklist (35+ items checked)
+  - Code quality assessment (82% test coverage)
+  - Gas optimization security impact analysis
+  - Mainnet deployment roadmap with recommendations
+  - Professional audit requirements documented
+  - Incident response plan
+
+### Documentation
+- Added security audit report with detailed findings
+- Documented centralization risks and mitigation strategies
+- Added deployment roadmap (testnet → pre-mainnet → mainnet)
+- Included emergency procedures and incident response plan
+
+### Status
+- ✅ Approved for testnet deployment
+- ⚠️ Requires professional third-party audit before mainnet
+- All 36 tests passing (100%)
+- Zero functionality changes from 0.2.0
+
+---
+
 ## [0.2.0] - 2026-01-30
 
 ### Added

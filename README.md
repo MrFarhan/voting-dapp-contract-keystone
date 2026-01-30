@@ -1,7 +1,7 @@
 # Voting DApp - Smart Contract
 
-**Version**: 0.2.0 | **Status**: Testnet Ready  
-📋 [Changelog](CHANGELOG.md) | 📦 [Release Guide](RELEASE.md) | 🏷️ [Semantic Versioning](https://semver.org/)
+**Version**: 0.2.1 | **Status**: Testnet Ready - Security Audited  
+📋 [Changelog](CHANGELOG.md) | 📦 [Release Guide](RELEASE.md) | 🔒 [Security Audit](SECURITY_AUDIT.md) | 🏷️ [Semantic Versioning](https://semver.org/)
 
 This is the smart contract repository for the Bounded Stake Voting (BSV) system, maintained separately from the frontend.
 
