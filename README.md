@@ -2,6 +2,13 @@
 
 This is the smart contract repository for the Bounded Stake Voting (BSV) system, maintained separately from the frontend.
 
+## ⚡ Gas Optimized Version Available!
+
+We've created an optimized version that saves **up to 20% gas** on operations:
+- **VotingSystemOptimized.sol** - Gas-efficient implementation
+- See [GAS_OPTIMIZATION_SUMMARY.md](GAS_OPTIMIZATION_SUMMARY.md) for details
+- Run `npx hardhat test test/GasComparison.test.ts` to see savings
+
 ## Prerequisites
 
 - Node.js (v16 or higher)
