@@ -1,12 +1,15 @@
 {
   "name": "voting-dapp-contracts",
-  "version": "1.0.0",
+  "version": "0.2.0",
   "scripts": {
     "compile": "hardhat compile",
     "test": "hardhat test",
     "test:verbose": "hardhat test --verbose",
     "test:coverage": "hardhat coverage",
+    "test:gas": "hardhat test test/GasComparison.test.ts",
     "deploy:local": "hardhat run scripts/deploy.ts --network localhost",
+    "deploy:sepolia": "hardhat run scripts/deploy-optimized-testnet.ts --network sepolia",
+    "verify:sepolia": "hardhat verify --network sepolia",
     "node": "hardhat node",
     "dev": "hardhat node",
     "generate:report": "node scripts/generate-coverage-report.js"
@@ -22,6 +25,7 @@
     "@types/mocha": "^10.0.0",
     "@types/node": "^20.0.0",
     "chai": "^4.3.0",
+    "dotenv": "^17.2.3",
     "ethers": "^6.4.0",
     "hardhat": "^2.19.0",
     "solidity-coverage": "^0.8.17",

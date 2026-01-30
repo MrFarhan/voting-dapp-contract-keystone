@@ -1,5 +1,8 @@
 # Voting DApp - Smart Contract
 
+**Version**: 0.2.0 | **Status**: Testnet Ready  
+📋 [Changelog](CHANGELOG.md) | 📦 [Release Guide](RELEASE.md) | 🏷️ [Semantic Versioning](https://semver.org/)
+
 This is the smart contract repository for the Bounded Stake Voting (BSV) system, maintained separately from the frontend.
 
 ## ⚡ Gas Optimized Version Available!
@@ -8,6 +11,14 @@ We've created an optimized version that saves **up to 20% gas** on operations:
 - **VotingSystemOptimized.sol** - Gas-efficient implementation
 - See [GAS_OPTIMIZATION_SUMMARY.md](GAS_OPTIMIZATION_SUMMARY.md) for details
 - Run `npx hardhat test test/GasComparison.test.ts` to see savings
+
+## 🚀 Testnet Deployment Ready!
+
+Deploy the gas-optimized version to Sepolia testnet:
+- Complete setup guide: [TESTNET_DEPLOYMENT.md](TESTNET_DEPLOYMENT.md)
+- Automated deployment script with verification
+- Command: `npm run deploy:sepolia`
+- Includes contract verification on Etherscan
 
 ## Prerequisites
 
